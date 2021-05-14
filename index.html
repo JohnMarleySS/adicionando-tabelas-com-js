@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form class="row g-3">
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="txtNome">
+        </div>
+        <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Sobrenome</label>
+            <input type="text" class="form-control" id="txtSobrenome">
+        </div>
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">E-mail</label>
+            <input type="text" class="form-control" id="txtEmail">
+        </div>
+        <div class="col-12">
+            <label for="inputAddress2" class="form-label">Altura</label>
+            <input type="text" class="form-control" id="txtAltura">
+        </div>
+        <div class="col-md-6">
+            <label for="inputCity" class="form-label">Sexo</label>
+            <input type="text" class="form-control" id="txtSexo">
+        </div>
+
+        <div class="col-12">
+            <input type="button" class="btn btn-primary" onclick="Adicionar(txtNome.value, txtSobrenome.value, txtEmail.value, txtAltura.value, txtSexo.value)" value="Adicionar Pessoas">
+        </div>
+    </form>
+
+    <table id="tbPessoas">
+        <thead>
+            <tr>
+                <td>Nome</td>
+                <td>Sobrenome</td>
+                <td>E-mail</td>
+                <td>Altura</td>
+                <td>Sexo</td>
+            </tr>
+        </thead>
+    </table>
+
+</body>
+
+</html>
